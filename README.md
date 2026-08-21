@@ -12,11 +12,15 @@ This is the campsite from Andy's Explorers Backpack as its own focused add-on. T
 
 The camp is built from native Minecraft blocks and lighting, so it fits survival worlds and works with Vibrant Visuals.
 
-**Current release:** 1.0.1  
-**Download:** [Andys_Portable_Campsite_1.0.1.mcaddon](Andys_Portable_Campsite_1.0.1.mcaddon)  
-**SHA-256:** `1525BED34EF1073678160165C31AB91558FCA1DA68FA6CDB6033D09F0A998A52`
+**Current release:** 1.3.1  
+**Download:** [Andys_Portable_Campsite_1.3.1.mcaddon](Andys_Portable_Campsite_1.3.1.mcaddon)  
+**SHA-256:** `6FE1493FD7E7B995727911E71DF53AB77F90084E12E3EDB02FAA8AB0EF801AD2`
 
 Minecraft Bedrock **26.40 or newer** is required. Cheats, commands, and experimental gameplay toggles are not required.
+
+## 1.3.1
+
+- Colored beds now place from saved head/foot structures so the tent bed matches the kit and sits correctly when the camp deploys.
 
 <p align="center">
   <img src="images/deployed-campsite.jpg" alt="A deployed green wool campsite with bed, chest, lanterns, and campfire" width="100%">
@@ -86,7 +90,7 @@ Recrafting does not duplicate an actively deployed campsite.
 
 ### Windows, Android, iPhone, and iPad
 
-1. Download `Andys_Portable_Campsite_1.0.1.mcaddon` from this repository.
+1. Download `Andys_Portable_Campsite_1.3.1.mcaddon` from this repository.
 2. Open the file with Minecraft Bedrock.
 3. Wait for Minecraft to confirm that both included packs imported successfully.
 4. Create a world, or edit the world where you want to use the add-on.
