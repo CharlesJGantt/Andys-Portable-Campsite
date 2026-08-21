@@ -18,6 +18,8 @@ The camp is built from native Minecraft blocks and lighting, so it fits survival
 
 Minecraft Bedrock **26.40 or newer** is required. Cheats, commands, and experimental gameplay toggles are not required.
 
+See the [project wiki](https://github.com/CharlesJGantt/Andys-Portable-Campsite/wiki) for the complete player guide.
+
 ## 1.3.1
 
 - Colored beds now place from saved head/foot structures so the tent bed matches the kit and sits correctly when the camp deploys.
