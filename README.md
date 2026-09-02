@@ -12,16 +12,31 @@ This is the campsite from Andy's Explorers Backpack as its own focused add-on. T
 
 The camp is built from native Minecraft blocks and lighting, so it fits survival worlds and works with Vibrant Visuals.
 
-**Current release:** 1.3.1  
-**Download:** [Andys_Portable_Campsite_1.3.1.mcaddon](Andys_Portable_Campsite_1.3.1.mcaddon)  
-**SHA-256:** `6FE1493FD7E7B995727911E71DF53AB77F90084E12E3EDB02FAA8AB0EF801AD2`
+**Current release:** 1.4.2  
+**Download:** [Andys_Portable_Campsite_1.4.2.mcaddon](Andys_Portable_Campsite_1.4.2.mcaddon)  
+**SHA-256:** `D50F2671361FD840D9A045766FCDF430003CAF10455B438C089EBD2763E8720D`
 
 Minecraft Bedrock **26.40 or newer** is required. Cheats, commands, and experimental gameplay toggles are not required.
 
 See the [project wiki](https://github.com/CharlesJGantt/Andys-Portable-Campsite/wiki) for the complete player guide.
 
-## 1.3.1
+## 1.4.2
 
+- Fixed a code regression that made the campsite chest give back its contents twice. The chest was archived and restored correctly on the next deployment, but packing up also dropped a second copy of everything on the ground.
+- Packing up a stocked camp now leaves nothing on the ground, and every item is waiting in the chest when the camp is deployed again.
+- Pack-up is refused instead of proceeding when the chest cannot be emptied safely, including when a player-placed chest has been set against the campsite chest to form a large chest.
+- Comforting Campfires hearth recipes moved into a third pack in the same download, **Andy's Portable Campsite - Comforting Campfires Bridge**. Activate it only if Andy's Comforting Campfires is installed; Minecraft will not activate it otherwise.
+- Worlds without Andy's Comforting Campfires no longer log hearth recipe errors when they load.
+- Nothing needs reconfiguring. Existing kits, deployed camps, chest archives, ownership, colors, and the vanilla Campfire and Soul Campfire recipes are unchanged.
+
+## 1.4.0
+
+- Added optional compatibility with Andy's Comforting Campfires. A Comforting Campfire, Comforting Soul Campfire, Hearthfire Campfire, or Hearthfire Soul Campfire can be crafted into the kit, and the deployed hearth keeps its Comfort healing, runes, and crouch-interact status menu across pack-up and redeployment.
+- Beds spawn in the same color as the wool used to craft the kit.
+
+## 1.3.2
+
+- Moved all three stacked center fence supports one block back onto the first floor block inside the tent opening, so they form the intended tent pole.
 - Colored beds now place from saved head/foot structures so the tent bed matches the kit and sits correctly when the camp deploys.
 
 <p align="center">
@@ -44,7 +59,8 @@ See the [project wiki](https://github.com/CharlesJGantt/Andys-Portable-Campsite/
 - Replacement kits reconnect to the same player-owned chest archive
 - Safe drop at your feet if inventory is full after pack-up
 - Vibrant Visuals compatible
-- Standalone; Andy's Explorers Backpack is not required
+- Optional Comforting Campfires hearth kits through the included bridge pack
+- Standalone; Andy's Explorers Backpack is not required, and already contains this campsite if you use it
 
 ## Crafting
 
@@ -92,12 +108,13 @@ Recrafting does not duplicate an actively deployed campsite.
 
 ### Windows, Android, iPhone, and iPad
 
-1. Download `Andys_Portable_Campsite_1.3.1.mcaddon` from this repository.
+1. Download `Andys_Portable_Campsite_1.4.2.mcaddon` from this repository.
 2. Open the file with Minecraft Bedrock.
-3. Wait for Minecraft to confirm that both included packs imported successfully.
+3. Wait for Minecraft to confirm that the included packs imported successfully.
 4. Create a world, or edit the world where you want to use the add-on.
 5. Activate **Andy's Portable Campsite** under Behavior Packs. Confirm that **Andy's Portable Campsite Resources** is also active.
-6. Enter the world and craft the kit at a normal Crafting Table.
+6. Optional: activate **Andy's Portable Campsite - Comforting Campfires Bridge** only if Andy's Comforting Campfires is installed. It carries the hearth crafting recipes and nothing else.
+7. Enter the world and craft the kit at a normal Crafting Table.
 
 Back up an important world before installing or updating any add-on.
 
@@ -111,12 +128,16 @@ Consoles generally cannot import arbitrary local `.mcaddon` files directly. Impo
 - Standard graphics and Vibrant Visuals
 - Single-player, multiplayer, Realms, and supported Bedrock servers
 - No required dependencies
+- Optional companion: Andy's Comforting Campfires, through the included bridge pack
+- Andy's Explorers Backpack contains the same campsite; run one edition or the other
 - No experimental gameplay toggles
 - No commands or Cheats required
 
 ## Troubleshooting
 
 **The recipe does not appear:** Confirm both packs imported successfully, the behavior pack is active, and the world is running Bedrock 26.40 or newer. Arrange the ingredients in the exact pattern shown above and use six matching wool blocks.
+
+**The Comfort hearth recipe does not appear:** Confirm Andy's Comforting Campfires is installed and active in the world, and that the Comforting Campfires Bridge pack is active as well. Minecraft will not let the bridge pack activate without Comforting Campfires installed.
 
 **The kit will not deploy:** Pack up your existing active campsite first. Then select the kit in your hotbar and use it on the ground with enough open space for the tent.
 
