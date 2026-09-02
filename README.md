@@ -12,13 +12,22 @@ This is the campsite from Andy's Explorers Backpack as its own focused add-on. T
 
 The camp is built from native Minecraft blocks and lighting, so it fits survival worlds and works with Vibrant Visuals.
 
-**Current release:** 1.4.2  
-**Download:** [Andys_Portable_Campsite_1.4.2.mcaddon](Andys_Portable_Campsite_1.4.2.mcaddon)  
-**SHA-256:** `D50F2671361FD840D9A045766FCDF430003CAF10455B438C089EBD2763E8720D`
+**Current release:** 1.5.0  
+**Download:** [Andys_Portable_Campsite_1.5.0.mcaddon](Andys_Portable_Campsite_1.5.0.mcaddon)  
+**SHA-256:** `9446E9346D76C62259BFF564DAC1174FA3502F93412BFCD615736AD65D0A4D4B`
 
 Minecraft Bedrock **26.40 or newer** is required. Cheats, commands, and experimental gameplay toggles are not required.
 
 See the [project wiki](https://github.com/CharlesJGantt/Andys-Portable-Campsite/wiki) for the complete player guide.
+
+## 1.5.0
+
+- The kit recipe now accepts **every vanilla lantern**: Lantern, Soul Lantern, and all four copper oxidation stages - Copper, Exposed, Weathered, and Oxidized - plus the waxed form of each. Previously only Lantern, Soul Lantern, and pristine unwaxed Copper Lantern worked, and wax or oxidation had to be scraped off with an axe first.
+- The camp is pitched with the exact lantern that was paid.
+- Copper weathering is remembered across pack-up. A camp's three lanterns age independently while it stands, and packing up records the stage each one reached, so redeploying keeps the patina instead of resetting to fresh copper. Waxed lanterns do not weather.
+- Fixed camps built with a Copper Lantern becoming permanently impossible to pack up. Unwaxed copper weathers on its own, so a camp lantern could turn exposed, weathered, or oxidized hours after the camp was pitched; pack-up compared it against the block it had originally placed, saw a different block, and refused. Camps already stuck this way pack up normally after updating. Camps using a plain Lantern or Soul Lantern were never affected.
+- A genuinely obstructed camp now reports the exact coordinates of the blocking cell, what was expected there, and what was found instead.
+- Nothing needs reconfiguring. Existing kits, deployed camps, chest archives, ownership, colors, and hearth choices are unchanged.
 
 ## 1.4.2
 
@@ -53,7 +62,7 @@ See the [project wiki](https://github.com/CharlesJGantt/Andys-Portable-Campsite/
 - Campfire two blocks in front of the tent, used to pack up
 - Sixteen tent-canvas colors from matching wool
 - Sixteen bed colors
-- Regular, soul, and copper lantern lighting
+- Regular, soul, and copper lantern lighting, at every copper oxidation stage
 - Regular and soul campfires
 - Owner-only pack-up and protected temporary camp blocks
 - Replacement kits reconnect to the same player-owned chest archive
@@ -79,7 +88,7 @@ The kit remembers the materials used:
 
 - The wool color becomes the tent canvas
 - The selected bed supplies the camp's functional sleeping area
-- A normal Lantern, Soul Lantern, or Copper Lantern sets the lighting
+- Any vanilla lantern sets the lighting: Lantern, Soul Lantern, or any copper stage, waxed or unwaxed
 - A regular Campfire or Soul Campfire is placed at the entrance
 
 ## Using the Campsite
@@ -108,7 +117,7 @@ Recrafting does not duplicate an actively deployed campsite.
 
 ### Windows, Android, iPhone, and iPad
 
-1. Download `Andys_Portable_Campsite_1.4.2.mcaddon` from this repository.
+1. Download `Andys_Portable_Campsite_1.5.0.mcaddon` from this repository.
 2. Open the file with Minecraft Bedrock.
 3. Wait for Minecraft to confirm that the included packs imported successfully.
 4. Create a world, or edit the world where you want to use the add-on.
